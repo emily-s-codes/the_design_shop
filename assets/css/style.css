@@ -110,8 +110,9 @@ header {
 }
 
 header h1 {
-    position: unset;
-    justify-self: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 header ul {
@@ -221,11 +222,11 @@ footer ul {
 @media only screen and (max-width: 600px) {
 
     header {
-        margin: 10px 50px;
+        margin: 10px 17px;
     }
 
     h1 {
-        position: fixed;
+        position: absolute;
         top: 10px;
         left: 10px;
     }
@@ -243,6 +244,12 @@ footer ul {
 
     header {
         margin: 10px 50px;
+
+    }
+
+    header h1 {
+        left: 60px;
+        top: 20px;
     }
 
     /* h1 {
@@ -265,9 +272,9 @@ footer ul {
         margin: 20px 100px;
     }
 
-    h1 {
-        top: 20px;
-        left: 100px;
+    header h1 {
+        top: 30px;
+        left: 110px;
     }
 
     main {
@@ -285,6 +292,10 @@ footer ul {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 2fr;
         margin: 10px 100px;
+    }
+
+    footer section.copyright {
+        grid-column: 1 / 5;
     }
 
     .footer_findUs {
